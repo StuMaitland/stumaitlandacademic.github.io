@@ -12,8 +12,12 @@ redirect_from:
 Experience
 ======
 
-## Aug 22-Present
-**Academic Clinical Fellow in Neurophysiology**  
+## Aug 25-Present
+**NIHR Academic Clinical Lecturer in Neurophysiology**  
+_Newcastle Upon Tyne Hospitals NHS Trust/ Newcastle University_
+
+## Aug 22-Aug 25
+**NIHR Academic Clinical Fellow in Neurophysiology**  
 _Newcastle Upon Tyne Hospitals NHS Trust/ Newcastle University_
 
 ## Feb 22-Aug 22
