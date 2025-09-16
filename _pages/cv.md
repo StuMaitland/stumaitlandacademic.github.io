@@ -90,7 +90,7 @@ Awards
 - Newcastle University Neuroscience Accelerator Award 
 - European Congress Clinical Neurophysiology Visiting Scholar 2018
 - NIHR Newcastle BRC Doctoral Fellowship 2018 
-- British Society for Clinical Neurophysiology Adrian Prize
+- British Society for Clinical Neurophysiology Lord Adrian Prize
 
 ## Personal
 - HRH Duke of York entrepreneur award 2016
@@ -99,6 +99,10 @@ Awards
 - EPSRC create4dementia coding competition winner
 - Member of British Society of Clinical Neurophysiology
 
+## Speaking
+- Royal College of Physicians of London- Turner Warwick Lecturer 2022
+- Newcastle University INSIGHTS Public Lecture 2021
+- European Congress Clinical Neurophysiology 2018- Best talk
 
 Publications
 ======
@@ -106,18 +110,30 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Speaking
-======
-- Royal College of Physicians of London- Turner Warwick Lecturer 2022
-- Newcastle University INSIGHTS Public Lecture 2021
-- ECCN 2018- Best presentation
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
 
+
+
+Talks
+======
+- 10/3/25- Combining Nerve Stimulation and Pulse-Wave Doppler Ultrasound to Measure Postsynaptic Muscle Facilitation- European Congress of Clinical Neurophysiology
+- 10/03/25- A Case of Refractory Epilepsy Exhibiting both Generalised and Focal Clinical Manifestations, Along with Corresponding EEG and MRI Findings- European Congress of Clinical Neurophysiology
+- 11/03/25- Motor Unit MRI in Polio survivors- European Congress of Clinical Neurophysiology
+- 14/03/24- Motor Unit MRI in Polio survivors- British Society for Clinical Neurophysiology Annual Meeting
+- 15/11/23- ExplainThisPaper: Using AI to make research more accessible- Newcastle University Researcher Development Programme
+- 30/09/22- Micro-EMG: Imaging human motor units using a novel intramuscular electrode array- Clinical Academic Symposium- Winner, Best Presentation
+- 08/10/21- Ipsilateral Motor Evoked Potentials as a measure of the reticulospinal tract in age-related strength changes- British Society for Clinical Neurophysiology- Winner, Adrian Prize
+- 23/9/21- UltraMUSE- Ultrasound guided Motor Unit Scanning EMG- International Course and Conference on Neuromuscular Imaging
+- 13/7/21- Why my research matters- Newcastle Biomedical Research Centre Showcase
+- 9/7/21- Reticulospinal contributions to sarcopenia- British Society Gerontology
+- 2/7/21- UltraMUSE- Ultrasound guided Motor Unit Scanning EMG- British Society for Clinical Neurophysiology
+- 11/6/21- Reticulospinal Contributions to Sarcopenia- International Sarcopenia Translational Research Conference
+- 25/3/21- “Is muscle weakness getting on your nerves?”- Newcastle University INSIGHTS Public Lecture series
+- 4/3/21- UltraMUSE- Ultrasound guided Motor Unit Scanning EMG- European Congress Radiology
+- 13/11/20- Is muscle weakness getting on your nerves? Reticulospinal Contributions to Sarcopenia- North East Postgraduate Conference
+- 7/6/19- Micro-EMG: Imaging human motor units using a novel intramuscular electrode array- European Congress of Clinical Neurophysiology. Winner, best oral presentation
+- 27/4/19- Clinical academic careers in neuroscience- Undergraduate Neurology Conference
+- 6/3/19- Multi-electrode EMG imaging- towards understanding age-related muscle disease- Institute of Neuroscience, Newcastle University
+- 21/11/18- BRC showcase event- Newcastle Biomedical Research Centre
+- 5/8/18- Detecting neuromuscular changes in ageing muscle using multi-electrode EMG- Institute of Neuroscience, Newcastle University
+- 13/5/18- Neurology for Finals- Medicine Finals teaching event
+- 14/7/17 Does fibres’ inter-distance affect jitter? Tentative results from a multi- channel EMG needle- British Society of Clinical Neurophysiology 
