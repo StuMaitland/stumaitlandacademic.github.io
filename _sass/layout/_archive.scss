@@ -28,8 +28,8 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0;
-  padding-bottom: 0.5em;
+  margin: 0 0 0;
+  padding-bottom: 0;
   font-size: $type-size-5;
   color: var(--global-text-color-light);
   border-bottom: 1px solid var(--global-border-color);
@@ -40,7 +40,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0;
   font-family: $sans-serif-narrow;
 
   a + a {
@@ -120,7 +120,7 @@
   }
 
   .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 0;
     font-size: $type-size-5;
   }
 
@@ -181,7 +181,7 @@
     font-size: 1.25rem;
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 0;
     }
 
     @include breakpoint($small) {
@@ -202,7 +202,7 @@
     font-size: 1.25rem;
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 0;
     }
 
     @include breakpoint($small) {
@@ -225,19 +225,19 @@
     font-size: 1.25rem;
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 0;
     }
 
     @include breakpoint($small) {
       text-align: center;
 
       .archive__item-teaser {
-        margin: 0 auto;
+        margin: 0 ;
         width: span(5 of 12);
       }
 
       .archive__item-body {
-        margin: 0 auto;
+        margin: 0 ;
         width: span(7 of 12);
       }
     }

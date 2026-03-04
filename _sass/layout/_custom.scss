@@ -1,0 +1,268 @@
+/* ==========================================================================
+   CUSTOM ACADEMIC STYLES
+   ========================================================================== */
+
+/* ==========================================================================
+   CV Card-Style Entries (for optional HTML usage)
+   ========================================================================== */
+
+.cv-entry {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid var(--global-cv-accent-color);
+  background: var(--global-card-bg-color);
+  border-radius: 0 $border-radius $border-radius 0;
+  transition: $global-transition;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-size: $type-size-5;
+    color: var(--global-heading-color);
+  }
+
+  .cv-entry__date {
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+    font-style: italic;
+    margin-bottom: 0.25em;
+    font-family: $sans-serif;
+  }
+
+  .cv-entry__institution {
+    font-size: 0.9em;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5em;
+  }
+
+  .cv-entry__description {
+    font-size: 0.95em;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-left: 1.25em;
+
+    li {
+      font-size: 0.9em;
+      margin-bottom: 0.25em;
+    }
+  }
+}
+
+/* ==========================================================================
+   Publication List — compact spacing
+   ========================================================================== */
+
+.archive__item {
+  margin-bottom: 0.5em;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid transparent;
+  border-radius: 0 $border-radius $border-radius 0;
+  transition: $global-transition;
+
+  &:hover {
+    border-left-color: var(--global-cv-accent-color);
+    background: var(--global-card-bg-color);
+  }
+
+  li {
+    margin-left: -0.5em;
+  }
+}
+
+.archive__item-title {
+  font-weight: 600;
+}
+
+.archive__item-excerpt {
+  color: var(--global-text-color);
+  line-height: 1.6;
+}
+
+.archive__item .page__meta,
+.archive__item p {
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Section Headings (h2) — accent underline
+   ========================================================================== */
+
+.page__content h2,
+.archive h2 {
+  position: relative;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid var(--global-border-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--global-cv-accent-color);
+  }
+}
+
+/* ==========================================================================
+   CV Page — h3 sub-entries (dates, degrees, project names)
+   Compact and flowing to match the About page style.
+   ========================================================================== */
+
+.page__content h3 {
+  margin-top: 1.25em;
+  margin-bottom: 0.25em;
+  font-size: $type-size-5;
+  border-bottom: none;
+}
+
+.archive__item-excerpt{
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   Author Profile / Sidebar Polish
+   ========================================================================== */
+
+.author__avatar img {
+  border: 3px solid var(--global-border-color);
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--global-cv-accent-color);
+  }
+}
+
+.author__name {
+  font-family: $header-font-family;
+  color: var(--global-heading-color);
+}
+
+.author__bio {
+  font-size: $type-size-6;
+  line-height: 1.5;
+  color: var(--global-text-color);
+}
+
+.author__urls {
+  li a {
+    transition: $global-transition;
+    padding: 4px 0;
+
+    &:hover {
+      color: var(--global-link-color);
+    }
+  }
+}
+
+/* ==========================================================================
+   About / Landing Page
+   ========================================================================== */
+
+.page__title {
+  font-family: $header-font-family;
+  color: var(--global-heading-color);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Skillset / Tags
+   ========================================================================== */
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  margin: 0.2em;
+  font-size: $type-size-6;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 2em;
+  color: var(--global-text-color);
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--global-cv-accent-color);
+    color: var(--global-cv-accent-color);
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  .masthead,
+  .sidebar,
+  .page__footer,
+  .page__share,
+  .page__related,
+  .author__urls-wrapper button,
+  #theme-toggle,
+  .no-print {
+    display: none !important;
+  }
+
+  .page,
+  .archive {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+  }
+
+  #main {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .cv-entry {
+    break-inside: avoid;
+    border-left-color: #333;
+    background: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h1, h2, h3 {
+    color: #000;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    border-bottom: 1px solid #ccc;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .archive__item {
+    border-left: none;
+    background: none;
+    padding: 0.5rem 0;
+  }
+}

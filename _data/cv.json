@@ -1,152 +1,137 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Dr Stu Maitland MRCP PhD",
+    "email": "stu.maitland@newcastle.ac.uk",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://stumaitland.github.io/stumaitlandacademic.github.io",
+    "summary": "NIHR Academic Clinical Lecturer in Computational Neurophysiology at Newcastle University, working at the intersection of clinical practice and computational modelling of the nervous system.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Newcastle upon Tyne",
+      "countryCode": "UK",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.co.uk/citations?user=-sFXV8MAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "username": "0000-0001-7879-016X",
+        "url": "https://orcid.org/0000-0001-7879-016X"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "StuMaitland",
+        "url": "https://github.com/StuMaitland"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "",
+        "url": "https://www.researchgate.net/profile/Stuart-Maitland"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Newcastle Upon Tyne Hospitals NHS Trust / Newcastle University",
+      "position": "NIHR Academic Clinical Lecturer in Neurophysiology",
+      "website": "",
+      "startDate": "2025-08-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Newcastle Upon Tyne Hospitals NHS Trust / Newcastle University",
+      "position": "NIHR Academic Clinical Fellow in Neurophysiology",
+      "website": "",
+      "startDate": "2022-08-01",
+      "endDate": "2025-08-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Northumbria Healthcare",
+      "position": "Internal Medical Trainee",
+      "website": "",
+      "startDate": "2022-02-01",
+      "endDate": "2022-08-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Newcastle University",
+      "position": "Clinical Doctoral Fellow",
+      "website": "",
+      "startDate": "2018-09-01",
+      "endDate": "2022-02-01",
+      "summary": "NIHR funded clinical PhD research post in neurophysiology, examining novel neurophysiological investigations, including using EMG as a biomarker of sarcopenia.",
+      "highlights": []
+    },
+    {
+      "company": "Newcastle Upon Tyne Hospitals NHS Trust",
+      "position": "Academic Foundation Doctor",
+      "website": "",
+      "startDate": "2016-08-01",
+      "endDate": "2018-07-01",
+      "summary": "Worked on software for a new medical device to diagnose neuromuscular conditions.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Royal College of Physicians",
+      "area": "MRCP",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Newcastle University",
+      "area": "PhD Neurophysiology",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
+      "endDate": "2023",
       "gpa": null,
-      "courses": []
+      "courses": ["Digital signal processing", "Neurophysiology"]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Newcastle University",
+      "area": "MSc Neuroinformatics & Computational Neuroscience",
+      "studyType": "Distinction",
+      "startDate": "",
+      "endDate": "2023",
+      "gpa": null,
+      "courses": ["Modelling neurological systems", "Computational neural networks"]
+    },
+    {
+      "institution": "Newcastle University",
+      "area": "Bachelor of Medicine, Bachelor of Surgery",
       "studyType": "",
       "startDate": "",
-      "endDate": "2012",
+      "endDate": "2016",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {"name": "Neurophysiology", "level": "", "keywords": []},
+    {"name": "Computational Neuroscience", "level": "", "keywords": []},
+    {"name": "EMG / Signal Processing", "level": "", "keywords": []},
+    {"name": "Python", "level": "", "keywords": []},
+    {"name": "MATLAB", "level": "", "keywords": []},
+    {"name": "Machine Learning / NLP", "level": "", "keywords": []},
+    {"name": "Clinical Research", "level": "", "keywords": []},
+    {"name": "Transcranial Magnetic Stimulation", "level": "", "keywords": []}
+  ],
   "languages": [],
   "interests": [],
   "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "publications": []
 }

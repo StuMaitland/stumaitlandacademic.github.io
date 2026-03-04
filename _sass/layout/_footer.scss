@@ -5,7 +5,7 @@
 .page__footer {
   @include clearfix;
   background-color: var(--global-footer-bg-color);
-  color: var(--global-text-color-light);
+  color: var(--global-footer-text-color);
 
   float: left;
   margin-left: 0;
@@ -25,7 +25,7 @@
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  border-top: 1px solid var(--global-dark-border-color);
+  border-top: 3px solid var(--global-cv-accent-color);
 
   footer {
     @include clearfix;
@@ -41,11 +41,12 @@
   }
 
   a {
-    color: inherit;
+    color: var(--global-footer-link-color);
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
+      color: #fff;
     }
   }
 
@@ -53,13 +54,14 @@
   .fab,
   .far,
   .fal {
-    color: var(--global-text-color-light);
+    color: var(--global-footer-text-color);
   }
 }
 
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  color: var(--global-footer-text-color);
 }
 
 .page__footer-follow {
@@ -73,7 +75,7 @@
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: $sans-serif-narrow;
+    font-family: $sans-serif;
     font-size: $type-size-6;
     text-transform: uppercase;
   }

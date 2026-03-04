@@ -19,16 +19,16 @@
     content: "";
     position: absolute;
     bottom: 0;
-    height: 1px;
-    background: var(--global-border-color);
+    height: 2px;
+    background: linear-gradient(90deg, var(--global-cv-accent-color), var(--global-link-color));
     width: 100%;
   }
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
-    font-family: $sans-serif-narrow;
+    padding: 0.75em 1em;
+    font-family: $sans-serif;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
