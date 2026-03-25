@@ -1,34 +1,60 @@
 /* ==========================================================================
-   CUSTOM ACADEMIC STYLES
+   CUSTOM STYLES — Modern Minimalist / Material / Glassmorphism
    ========================================================================== */
 
 /* ==========================================================================
-   CV Card-Style Entries (for optional HTML usage)
+   Ambient Gradient Wash — subtle color atmosphere at top of page
+   ========================================================================== */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  background:
+    radial-gradient(ellipse at 20% -15%, var(--global-ambient-1) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 5%, var(--global-ambient-2) 0%, transparent 55%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+/* ==========================================================================
+   CV Card-Style Entries — Glassmorphism cards
    ========================================================================== */
 
 .cv-entry {
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.25rem;
-  border-left: 3px solid var(--global-cv-accent-color);
-  background: var(--global-card-bg-color);
-  border-radius: 0 $border-radius $border-radius 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--global-glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--global-glass-border);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
   transition: $global-transition;
 
   &:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: var(--global-cv-accent-color);
   }
 
   h3 {
     margin-top: 0;
     margin-bottom: 0.25em;
     font-size: $type-size-5;
+    font-weight: 600;
     color: var(--global-heading-color);
   }
 
   .cv-entry__date {
-    font-size: 0.85em;
+    font-size: 0.82em;
     color: var(--global-text-color-light);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     margin-bottom: 0.25em;
     font-family: $sans-serif;
   }
@@ -42,7 +68,7 @@
   .cv-entry__description {
     font-size: 0.95em;
     margin-bottom: 0;
-    line-height: 1.6;
+    line-height: 1.65;
   }
 
   ul {
@@ -57,20 +83,20 @@
   }
 }
 
+
 /* ==========================================================================
-   Publication List — compact spacing
+   Publication / Archive List
    ========================================================================== */
 
 .archive__item {
-  margin-bottom: 0.5em;
-  padding: 0.5rem 0.75rem;
-  border-left: 3px solid transparent;
-  border-radius: 0 $border-radius $border-radius 0;
+  margin-bottom: 0.25em;
+  padding: 0.75rem 1rem;
+  border-radius: $border-radius;
   transition: $global-transition;
 
   &:hover {
-    border-left-color: var(--global-cv-accent-color);
-    background: var(--global-card-bg-color);
+    background: var(--global-glass-bg);
+    box-shadow: $box-shadow;
   }
 
   li {
@@ -84,40 +110,40 @@
 
 .archive__item-excerpt {
   color: var(--global-text-color);
-  line-height: 1.6;
+  line-height: 1.65;
+  margin-bottom: 0;
 }
 
 .archive__item .page__meta,
 .archive__item p {
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
+
 /* ==========================================================================
-   Section Headings (h2) — accent underline
+   Section Headings — gradient accent bar
    ========================================================================== */
 
 .page__content h2,
 .archive h2 {
   position: relative;
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid var(--global-border-color);
+  padding-bottom: 0.6em;
+  margin-top: 2em;
+  border-bottom: 1px solid var(--global-border-color);
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
-    width: 60px;
-    height: 2px;
-    background: var(--global-cv-accent-color);
+    width: 40px;
+    height: 3px;
+    background: var(--global-gradient);
+    border-radius: 2px;
   }
 }
 
-/* ==========================================================================
-   CV Page — h3 sub-entries (dates, degrees, project names)
-   Compact and flowing to match the About page style.
-   ========================================================================== */
-
+/* CV sub-entries */
 .page__content h3 {
   margin-top: 1.25em;
   margin-bottom: 0.25em;
@@ -125,76 +151,100 @@
   border-bottom: none;
 }
 
-.archive__item-excerpt{
-  margin-bottom: 0;
-}
-
 
 /* ==========================================================================
-   Author Profile / Sidebar Polish
+   Author Profile / Sidebar overrides
    ========================================================================== */
 
-.author__avatar img {
-  border: 3px solid var(--global-border-color);
-  transition: $global-transition;
-
-  &:hover {
-    border-color: var(--global-cv-accent-color);
-  }
-}
-
 .author__name {
-  font-family: $header-font-family;
+  font-family: $sans-serif;
   color: var(--global-heading-color);
+  letter-spacing: -0.01em;
 }
 
 .author__bio {
   font-size: $type-size-6;
-  line-height: 1.5;
-  color: var(--global-text-color);
+  line-height: 1.6;
+  color: var(--global-text-color-light);
 }
 
 .author__urls {
   li a {
     transition: $global-transition;
-    padding: 4px 0;
-
-    &:hover {
-      color: var(--global-link-color);
-    }
   }
 }
 
+
 /* ==========================================================================
-   About / Landing Page
+   Page Title
    ========================================================================== */
 
 .page__title {
-  font-family: $header-font-family;
+  font-family: $sans-serif;
   color: var(--global-heading-color);
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
+
 /* ==========================================================================
-   Skillset / Tags
+   Skill / Tag Pills
    ========================================================================== */
 
 .skill-tag {
   display: inline-block;
-  padding: 0.25em 0.75em;
+  padding: 0.3em 0.8em;
   margin: 0.2em;
-  font-size: $type-size-6;
-  background: var(--global-card-bg-color);
-  border: 1px solid var(--global-border-color);
+  font-size: $type-size-7;
+  font-weight: 500;
+  background: var(--global-glass-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--global-glass-border);
   border-radius: 2em;
   color: var(--global-text-color);
   transition: $global-transition;
 
   &:hover {
+    background: var(--global-cv-accent-color);
     border-color: var(--global-cv-accent-color);
-    color: var(--global-cv-accent-color);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
   }
 }
+
+
+/* ==========================================================================
+   Dark mode: nav link hover
+   ========================================================================== */
+
+html[data-theme="dark"] .greedy-nav a:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* ==========================================================================
+   Smooth page-load animations
+   ========================================================================== */
+
+.page__content,
+.archive,
+.sidebar {
+  animation: fadeSlideUp 0.4s ease-out both;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ==========================================================================
    Print Styles
@@ -206,6 +256,10 @@
     line-height: 1.5;
     color: #000;
     background: #fff;
+
+    &::before {
+      display: none;
+    }
   }
 
   a {
@@ -240,11 +294,13 @@
 
   .cv-entry {
     break-inside: avoid;
-    border-left-color: #333;
+    border: 1px solid #ddd;
     background: none;
     box-shadow: none;
+    backdrop-filter: none;
     padding: 0.5rem 1rem;
     margin-bottom: 0.75rem;
+    transform: none;
   }
 
   h1, h2, h3 {
@@ -261,8 +317,8 @@
   }
 
   .archive__item {
-    border-left: none;
     background: none;
+    box-shadow: none;
     padding: 0.5rem 0;
   }
 }

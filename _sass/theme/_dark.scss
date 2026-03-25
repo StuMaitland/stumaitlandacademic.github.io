@@ -3,57 +3,64 @@
    ========================================================================== */
 
 /* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
+$gray                       : #64748b;
+$dark-gray                  : #334155;
+$darker-gray                : #1e293b;
+$light-gray                 : #94a3b8;
 
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+$background                 : #0f172a;   // Slate-900 (deep navy-black)
+$surface                    : #1e293b;   // Slate-800
+$surface-2                  : #334155;   // Slate-700
+$text                       : #e2e8f0;
+$text-light                 : #94a3b8;
+$link                       : #60a5fa;
+$link-violet                : #a78bfa;
+$link-dark                  : mix(#000, $link, 20%);
+$link-light                 : mix(#fff, $link, 20%);
 
 /* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$danger-color               : #f87171;
+$info-color                 : $link;
+$notice-color               : #64748b;
+$success-color              : #4ade80;
+$warning-color              : #fbbf24;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
+$border-radius              : 12px;
+$box-shadow                 : 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+$global-transition          : all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 $masthead-height            : 70px;
 $navicon-width              : 28px;
-$navicon-height             : 4px;
+$navicon-height             : 2px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
+    --global-base-color                 : #{$surface};
     --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #2d2d2d;
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #3a3a3a;
-    --global-code-text-color            : #{$background-lighter};
-    --global-fig-caption-color          : #{$light-gray};
+    --global-footer-bg-color            : #020617;
+    --global-border-color               : rgba(255, 255, 255, 0.08);
+    --global-dark-border-color          : rgba(255, 255, 255, 0.15);
+    --global-code-background-color      : #{$surface};
+    --global-code-text-color            : #93c5fd;
+    --global-fig-caption-color          : #{$text-light};
     --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
+    --global-link-color-hover           : #{$link-violet};
+    --global-link-color-visited         : #{$link-dark};
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$link};
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$background-lighter};
-    --global-heading-color              : #{$text};
+    --global-text-color-light           : #{$text-light};
+    --global-thead-color                : #{$surface};
+    --global-heading-color              : #f1f5f9;
     --global-cv-accent-color            : #{$link};
-    --global-card-bg-color              : #3a3a3a;
-    --global-footer-text-color          : rgba(255, 255, 255, 0.7);
-    --global-footer-link-color          : rgba(255, 255, 255, 0.85);
+    --global-card-bg-color              : #{$surface};
+    --global-footer-text-color          : rgba(255, 255, 255, 0.6);
+    --global-footer-link-color          : rgba(255, 255, 255, 0.8);
+    --global-gradient                   : linear-gradient(135deg, #{$link} 0%, #{$link-violet} 100%);
+    --global-glass-bg                   : rgba(30, 41, 59, 0.65);
+    --global-glass-border               : rgba(255, 255, 255, 0.06);
+    --global-ambient-1                  : rgba(96, 165, 250, 0.05);
+    --global-ambient-2                  : rgba(167, 139, 250, 0.04);
 }

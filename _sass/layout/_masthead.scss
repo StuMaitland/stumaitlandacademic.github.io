@@ -1,38 +1,36 @@
 /* ==========================================================================
-   MASTHEAD
+   MASTHEAD — Floating pill navigation
    ========================================================================== */
 
 .masthead {
   position: fixed;
-  background: var(--global-bg-color);
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 24px);
+  max-width: 900px;
   height: fit-content;
-  top: 0;
-  width: 100%;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 100;
 
   &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--global-cv-accent-color), var(--global-link-color));
-    width: 100%;
+    display: none;
   }
 
   &__inner-wrap {
-    @include container;
     @include clearfix;
-    padding: 0.75em 1em;
+    padding: 0.4em 1em;
     font-family: $sans-serif;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
 
     nav {
       z-index: 10;
@@ -44,8 +42,13 @@
   }
 }
 
-.masthead__menu {
+html[data-theme="dark"] .masthead {
+  background: rgba(15, 23, 42, 0.80);
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+}
 
+.masthead__menu {
   ul {
     margin: 0;
     padding: 0;
@@ -55,13 +58,13 @@
 }
 
 .masthead__menu-item {
-  background-color: var(--global-bg-color);
+  background-color: transparent;
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: 1.5em;
     font-weight: 700;
   }
 }

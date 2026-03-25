@@ -175,17 +175,22 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: var(--global-bg-color);
+  background: transparent;
 
   a {
     display: block;
-    margin: 0 1rem;
-    padding: 0.5rem 0;
+    margin: 0 0.15rem;
+    padding: 0.4rem 0.65rem;
     color: var(--global-masthead-link-color);
     text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: $global-transition;
 
     &:hover {
       color: var(--global-masthead-link-color-hover);
+      background: rgba(0, 0, 0, 0.04);
     }
   }
 
@@ -196,10 +201,11 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: var(--global-base-color);
+    background-color: var(--global-cv-accent-color);
     color: #fff;
     cursor: pointer;
     z-index: 100;
+    border-radius: 8px;
   }
 
   .visible-links {
@@ -210,11 +216,12 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
+        font-weight: 700;
         text-wrap: wrap;
 
         a {
           margin-left: 0;
+          font-size: 1em;
         }
       }
 
@@ -227,7 +234,7 @@
 
     #theme-toggle {
       a {
-        width: 25px;
+        width: 32px;
         display: flex;
         justify-content: center;
         cursor: pointer;
@@ -238,24 +245,7 @@
       position: relative;
 
       &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: var(--global-border-color);
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
-      }
-
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+        display: none;
       }
     }
   }
@@ -264,12 +254,12 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid var(--global-border-color);
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid var(--global-glass-border);
     border-radius: $border-radius;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    background: var(--global-bg-color);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 
     a {
       margin: 0;
@@ -303,7 +293,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: var(--global-bg-color) transparent;
       display: block;
       z-index: 1;
     }
@@ -385,7 +375,7 @@
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: var(--global-bg-color);
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
   box-shadow: $box-shadow;

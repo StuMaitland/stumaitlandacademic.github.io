@@ -25,7 +25,11 @@
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  border-top: 3px solid var(--global-cv-accent-color);
+  border-top: none;
+  background-image: var(--global-gradient), linear-gradient(var(--global-footer-bg-color), var(--global-footer-bg-color));
+  background-size: 100% 2px, 100% 100%;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
 
   footer {
     @include clearfix;
