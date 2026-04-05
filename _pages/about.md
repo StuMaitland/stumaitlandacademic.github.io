@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Dr Stu Maitland — Computational Neurophysiologist"
+excerpt: "NIHR Academic Clinical Lecturer in Computational Neurophysiology at Newcastle University. Research in neuromuscular disorders, EMG signal processing, and AI in healthcare."
 author_profile: true
 redirect_from:
   - /about/
@@ -17,7 +18,7 @@ I work at the intersection of clinical practice and computational modeling, aimi
 
 I'm interested in developing new diagnostic tools for complex neuromuscular disorders, and in [using computational models to simulate and predict the behavior of neural systems](https://doi.org/10.1016/j.clinph.2021.12.022). My work often involves collaboration with other researchers in neuroscience, engineering, and clinical medicine.
 
-My previous work has looked at the neurophysiological reasons why we lose strength as we grow older ([sarcopenia](https://doi.org/10.1016/j.archger.2020.104268)). Previously thought of as a muscle-first disease, I showed [significant changes in the cortico/reticulospinal tract balance using transcranial magnetic stimulation](http://journal.frontiersin.org/article/10.3389/fnagi.2021.00000/full), and developed new ways of assessing the ageing motor unit.
+My previous work has looked at the neurophysiological reasons why we lose strength as we grow older ([sarcopenia](https://doi.org/10.1016/j.archger.2020.104268)). Previously thought of as a muscle-first disease, I showed [significant changes in the cortico/reticulospinal tract balance using transcranial magnetic stimulation](https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2021.612352/full), and developed new ways of assessing the ageing motor unit.
 
 ## AI in Healthcare
 
