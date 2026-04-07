@@ -1,13 +1,11 @@
 ---
-title: "A Manifesto for Neurophysiology — Part 1: The Specialty Under Pressure"
+title: "A Manifesto for Neurophysiology — Part 1: The specialty nobody talks about (and why that's a problem)"
 date: 2025-04-07
 permalink: /posts/2025/04/manifesto-neurophysiology-part-1/
 tags:
   - neurophysiology
   - manifesto
 ---
-
-# A Manifesto for Neurophysiology — Part 1: The specialty nobody talks about (and why that's a problem)
 
 *This is the first in a series of posts making the case for a different kind of neurophysiology. It starts with an honest look at where we are.*
 
